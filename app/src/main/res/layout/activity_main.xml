@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="100px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Bienv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FORMUARIO" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100px">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="213dp"
+                android:layout_height="196dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="208dp"
+            android:layout_height="291dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="50dp"
+                android:text="Usuario" />
+
+            <TextView
+                android:id="@+id/contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="50dp"
+                android:text="Contraseña" />
+
+            <TextView
+                android:id="@+id/cod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="50dp"
+                android:text="Codigo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="293dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Usa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Ingrese su usuario"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Ingrese su contraseña"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/codi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Ingrese su codigo"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="311dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="150px"
+        android:layout_marginBottom="350px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Enviar" />
+</LinearLayout >
